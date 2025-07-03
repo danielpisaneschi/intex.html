@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Daniel Pisaneschi Neto</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #2e8b57;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-top: 20px;
+            line-height: 1.8em;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: center;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #1e90ff;
+        }
+
+        a:hover {
+            color: #ff4500;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #mensagem {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #2f4f4f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Daniel Pisaneschi Neto</h1>
+    </header>
+
+    <main>
+        <p>
+            Meu nome é Daniel, nascido em São Paulo, moro em Maringá e tenho atualmente 22 anos.
+            Meus maiores interesses são jogar bola, tocar violino e estudar. Faço faculdade de Engenharia
+            de Software e Ciências Econômicas.
+        </p>
+
+        <ul>
+            <li>Estudar para me formar nas duas faculdades</li>
+            <li>Tocar violino</li>
+            <li>Jogar bola e praticar judô</li>
+        </ul>
+
+        <img src="violino trabalho.jpg" alt="Imagem de um violino">
+
+        <table>
+            <tr>
+                <th>País</th>
+                <th>Imagem</th>
+            </tr>
+            <tr>
+                <td>Japão</td>
+                <td><img src="japão.jpg" alt="Bandeira do Japão" width="100"></td>
+            </tr>
+            <tr>
+                <td>Itália</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/1920px-Flag_of_Italy.svg.png" alt="Bandeira da Itália" width="100"></td>
+            </tr>
+            <tr>
+                <td>Nova Zelândia</td>
+                <td><img src="nova zelandia.jpg" alt="Bandeira da Nova Zelândia" width="100"></td>
+            </tr>
+        </table>
+
+        <a href="https://www.tecmundo.com.br" target="_blank">Acesse o site de tecnologia TecMundo</a>
+
+        <br>
+        <button onclick="mostrarMensagem()">Clique para ver uma mensagem!</button>
+        <div id="mensagem"></div>
+    </main>
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").innerText = "Nunca desista dos seus sonhos. Continue estudando e evoluindo!";
+        }
+    </script>
+</body>
+</html>
